@@ -1,0 +1,8 @@
+{
+  "presets": [
+    "babel-preset-expo"
+  ],
+  "plugins": [
+    "jsx-control-statements"
+  ]
+}

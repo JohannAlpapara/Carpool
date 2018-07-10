@@ -1,0 +1,61 @@
+{
+  "name": "PÜL",
+  "description": "A carpooling app designed for students to help each other get more involved in their community.",
+  "slug": "pul",
+  "sdkVersion": "17.0.0",
+  "version": "1.0.0",
+  "orientation": "portrait",
+  "primaryColor": "#cccccc",
+  "icon": "http://i.imgur.com/FB7xWqw.png",
+  "notification": {
+    "icon": "http://i.imgur.com/RAKQ1Aw.png",
+    "color": "#000000"
+  },
+  "privacy": "public",
+  "loading": {
+    "icon": "http://i.imgur.com/uXzacrP.png",
+    "hideExponentText": true
+  },
+  "packagerOpts": {
+    "assetExts": [
+      "ttf",
+      "mp4",
+      "jpg"
+    ]
+  },
+  "ios": {
+    "bundleIdentifier": "io.github.datwheat.pul",
+    "buildNumber": "8",
+    "config": {
+      "usesNonExemptEncryption": false
+    },
+    "supportsTablet": false,
+    "infoPlist": {
+      "LSApplicationQueriesSchemes": [
+        "waze",
+        "lyft"
+      ]
+    }
+  },
+  "android": {
+    "package": "io.github.datwheat.pul",
+    "versionCode": 8,
+    "config": {
+      "googleMaps": {
+        "apiKey": "AIzaSyAgFjSKPvJ-YjqpN-uSdyQYFzaJSTWhmSA"
+      }
+    }
+  },
+  "hooks": {
+    "postPublish": [
+      {
+        "file": "sentry-expo/upload-sourcemaps",
+        "config": {
+          "organization": "juwan-wheatley",
+          "project": "pul",
+          "authToken": "ba831e90c8b5421b907731c3bc77415161fa905c437e4572ae79ad2192886adc"
+        }
+      }
+    ]
+  }
+}

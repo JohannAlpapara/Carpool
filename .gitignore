@@ -1,0 +1,10 @@
+.DS_Store
+npm-debug.*
+.idea/
+.expo/*
+node_modules/
+.release/
+.vscode/
+jsconfig.json
+.eslintcache
+yarn-error.log
